@@ -1,0 +1,37 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+	
+	dependencies {
+		classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.6.RELEASE'
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile group: 'com.alibaba', name: 'fastjson', version: '1.2.32'
+	compile 'org.springframework.boot:spring-boot-starter-test'
+	compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+	compile group: 'io.swagger', name: 'swagger-core', version: '1.5.8'
+	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.38'
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	//runtime('mysql:mysql-connector-java')
+	//compile('org.springframework.boot:spring-boot-starter-tomcat')
+	//testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile group: 'aopalliance', name: 'aopalliance', version: '1.0'
+	compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.13'
+	compile group: 'cglib', name: 'cglib', version: '3.2.4'
+	
+	
+	
+	
+	
+}
